@@ -1,5 +1,6 @@
 package dev.lmao;
 
+import dev.lmao.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,5 +22,6 @@ public class LmaoMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+        ModItems.registerModItems();
 	}
 }
